@@ -1,0 +1,30 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "options": {
+        "env": {
+            "VCTargetsPath": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/VC/VCTargets",
+            "VCToolsInstallDir": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/VC/Tools/MSVC/14.13.26128"
+        }
+    },
+    "tasks": [
+        {
+            "label": "build-main",
+            "command": "bash",
+            "args": [
+                "-c",
+                "g++ -std=c++11 -Wall -Wextra -pedantic -Wformat=2 -Wfloat-equal -Wlogical-op -Wredundant-decls -Wconversion -Wcast-qual -Wcast-align -Wuseless-cast -Wno-shadow -Wno-unused-result -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-long-long -DLOCAL_PROJECT -g -DLOCAL_DEBUG -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC /mnt/c/Users/vixen/Documents/competitive_programming/main.cpp -o /mnt/c/Users/vixen/Documents/competitive_programming/main.out"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "test-main",
+            "command": "bash",
+            "args": [
+                "-c",
+                "./test-main.sh /mnt/c/Users/vixen/Documents/competitive_programming/main.out"
+            ],
+        }
+    ]
+}
