@@ -1,6 +1,18 @@
 {
     "configurations": [
         {
+            "name": "WSL",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        },
+        {
             "name": "Mac",
             "includePath": [
                 "/usr/include",
@@ -51,14 +63,17 @@
                 "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/um",
                 "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/ucrt",
                 "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/shared",
-                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/winrt"
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/winrt",
+                "C:/Users/vixen/AppData/Local/lxss/rootfs/usr/include/",
+                "C:/Users/vixen/AppData/Local/lxss/rootfs/usr/local/include/",
+                "C:/Users/vixen/AppData/Local/lxss/rootfs/usr/include/x86_64-linux-gnu/c++/4.8"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "intelliSenseMode": "msvc-x64",
+            "intelliSenseMode": "gcc-x64",
             "browse": {
                 "path": [
                     "${workspaceFolder}",
@@ -67,7 +82,10 @@
                     "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/um",
                     "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/ucrt",
                     "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/shared",
-                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/winrt"
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/winrt",
+                    "C:/Users/vixen/AppData/Local/lxss/rootfs/usr/include/",
+                    "C:/Users/vixen/AppData/Local/lxss/rootfs/usr/local/include/",
+                    "C:/Users/vixen/AppData/Local/lxss/rootfs/usr/include/x86_64-linux-gnu/c++/4.8"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
